@@ -7,7 +7,7 @@ import "forge-std/console.sol";
 contract CoinFlipAttack {
     address private owner;
     address private targetAddress;
-  uint256 FACTOR = 57896044618658097711785492504343953926634992332820282019728792003956564819968;
+    uint256 constant FACTOR = 57896044618658097711785492504343953926634992332820282019728792003956564819968;
 
     constructor(address _targetAddress) {
         owner = msg.sender;
