@@ -2,7 +2,3 @@
 src = 'src'
 out = 'out'
 libs = ['lib']
-
-[rpc_endpoints]
-infura = "${INFURA_RPC_URL}"
-

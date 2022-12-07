@@ -6,7 +6,7 @@ const sendTransaction = async () => {
   console.log(`> Transaction from: ${wallet.address}`);
 
   const tx = await wallet.sendTransaction({
-    to: "0xA1508273ca15Ab124F8BE9DCAc018537244e0d1d",
+    to: "0x65cD03A979812090A674587d9aEf21D9989c0Bbd",
     data: "0x9e5faafc",
   });
 
