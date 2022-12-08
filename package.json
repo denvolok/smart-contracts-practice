@@ -8,8 +8,9 @@
     "test": "test"
   },
   "scripts": {
-    "deploy": "ts-node scripts/deploy-contract",
-    "transaction": "ts-node scripts/send-transaction"
+    "deploy": "ts-node scripts/deploy-contract.s.ts",
+    "tx": "ts-node tmp/tx",
+    "call": "ts-node tmp/call"
 
   },
   "repository": {
