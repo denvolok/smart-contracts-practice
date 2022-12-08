@@ -19,6 +19,7 @@
     "@typescript-eslint/interface-name-prefix": "off",
     "@typescript-eslint/no-useless-constructor": "off",
     "class-methods-use-this": "warn",
-    "no-console": "off"
+    "no-console": "off",
+    "no-underscore-dangle": "off"
   }
 }
