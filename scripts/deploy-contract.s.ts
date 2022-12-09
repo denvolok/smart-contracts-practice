@@ -23,7 +23,7 @@ const deploy = async () => {
   const contract = await factory.deploy(...constructorArgs);
   await contract.deployed();
 
-  console.log(`> Deployed at: ${contract.address}`);
+  console.log(`> Deployed at:    ${contract.address}`);
 };
 
 deploy().catch(console.error);
