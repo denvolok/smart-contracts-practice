@@ -1,5 +1,5 @@
-import { ContractFactory } from "ethers";
 import * as dotenv from "dotenv";
+import { ContractFactory } from "ethers";
 import * as fs from "fs";
 import * as path from "path";
 import { getWallet } from "./_utils";
