@@ -2,8 +2,8 @@
 pragma solidity ^0.8.13;
 
 import "forge-std/Test.sol";
-import "../../../src/Ethernaut/CoinFlip/CoinFlip.sol";
-import "../../../src/Ethernaut/CoinFlip/CoinFlipAttack.sol";
+import "./CoinFlip.sol";    
+import "./CoinFlipAttack.sol";
 
 contract CoinFlipAttackTest is Test {
     CoinFlip coinFlip;

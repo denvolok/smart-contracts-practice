@@ -2,8 +2,8 @@
 pragma solidity ^0.8.13;
 
 import "forge-std/Test.sol";
-import "../src/Weakness/Reentrancy/SimpleDao.sol";
-import "../src/Weakness/Reentrancy/SimpleDaoAttack.sol";
+import "./SimpleDao.sol";
+import "./SimpleDaoAttack.sol";
 
 contract SimpleDAOTest is Test {
     SimpleDAOAttack daoAttack;
