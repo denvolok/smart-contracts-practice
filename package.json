@@ -11,7 +11,6 @@
     "deploy": "ts-node scripts/deploy-contract.s.ts",
     "tx": "ts-node tmp/tx",
     "call": "ts-node tmp/call"
-
   },
   "repository": {
     "type": "git",
