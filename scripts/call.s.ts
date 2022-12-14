@@ -1,9 +1,9 @@
-import { getInfuraProvider } from "./_utils";
+import { getRemoteProvider } from "./_utils";
 
 const call = async () => {
-  const provider = getInfuraProvider();
+  const provider = getRemoteProvider();
 
-  const res = await provider.getBalance("0x0000000000000000000000000000000000000000");
+  const res = await provider.getBalance("0x00");
   console.log(res);
 };
 

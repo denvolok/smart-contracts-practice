@@ -2,7 +2,7 @@ import * as dotenv from "dotenv";
 import { ContractFactory } from "ethers";
 import * as fs from "fs";
 import * as path from "path";
-import { getAnvilWallet } from "../../../../scripts/_utils";
+import { getLocalWallet } from "../../../../scripts/_utils";
 
 dotenv.config();
 
@@ -11,7 +11,7 @@ dotenv.config();
  * $ yarn deploy "CoinFlipAttack.sol/CoinFlipAttack" '["0x97A9dFb9C4e6FE2F7105F8E2aa11A95DC8272bAd"]'
  */
 const deploy = async () => {
-  const wallet = getAnvilWallet();
+  const wallet = getLocalWallet();
 
   const jsonPath1 = path.join(process.cwd(), `out/GatekeeperOne.sol/GatekeeperOne.json`);
   const jsonPath2 = path.join(process.cwd(), `out/GatekeeperAttack.sol/GatekeeperAttack.json`);

@@ -1,7 +1,7 @@
-import { getWallet } from "./_utils";
+import { getRemoteWallet } from "./_utils";
 
 const sendTransaction = async () => {
-  const wallet = await getWallet();
+  const wallet = await getRemoteWallet();
   console.log(`> Transaction from: ${wallet.address}`);
 
   const tx = await wallet.sendTransaction({

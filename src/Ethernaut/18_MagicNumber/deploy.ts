@@ -1,7 +1,7 @@
-import { getWallet } from "../../../scripts/_utils";
+import { getRemoteWallet } from "../../../scripts/_utils";
 
 const sendTransaction = async () => {
-  const wallet = await getWallet();
+  const wallet = await getRemoteWallet();
 
   const tx = await wallet.sendTransaction({
     data: "0x600a600c600039600a6000f3602a60005260206000f3",
