@@ -2,7 +2,7 @@
 
 pragma solidity ^0.5.0;
 
-import "openzeppelin-contracts/access/Ownable.sol";
+import "./Ownable.sol";
 
 contract AlienCodex is Ownable {
     bool public contact;
